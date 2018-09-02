@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+#form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+#name {
+  flex: none;
+  padding: 5px;
+  width: 150px;
+}
+
+#name #n {
+  width: 100%;
+}
+
+#input {
+  flex: 1;
+  padding: 5px;
+}
+
+#btnContainer {
+  flex: none;
+  padding: 5px;
+  width: 90px;
+}
+
+#btnContainer button {
+  width: 100%;
+}
+
+#messages {
+  position: absolute;
+  top: 45px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+#messages li {
+  display: flex;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+#messages li .name{
+  width: 150px;
+  text-align: right;
+  -webkit-flex: none;
+          flex: none;
+}
+
+#messages li .msg{
+  text-align: left;
+  margin-left: 10px;
+  -webkit-flex: initial;
+          flex: initial;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+.bullet {
+  position: fixed;
+	white-space: nowrap;
+  font-size: 2em;
+  text-shadow: 0px 0px 10px #888;
+  z-index: 5;
+}
+
+.modal {
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+
+#doc tbody td{
+  background: #FBFBFB;
+}
+
+@media (max-width: 768px) {
+.mobile-hidden {
+  display: none !important;
+}
+.name {
+  width: 100px !important;
+}
+#name {
+  width: 100px;
+}
+#btnContainer {
+  width: 70px;
+}
+#btnContainer button {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+}
+
+.kaomoji {
+  margin-top: 5px;
+}
+
+.online {
+  position: fixed;
+  right: 20px;
+  bottom: 52px;
+  color: #AAA;
+}
+
+.AA {
+  font-family: "MS PGothic", "ＭＳ Ｐゴシック", "Trebuchet MS", Verdana, Futura, Arial, Helvetica, sans-serif;
+}
+
+.staticBullet {
+  position: fixed;
+  bottom: 0px;
+  font-size: 2em;
+  text-shadow: 0px 0px 10px #888;
+  z-index: 5;
+}
