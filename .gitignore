@@ -3,5 +3,6 @@ node_modules
 *~
 *.swp
 *.swo
+config.js
 
 npm-debug.log
